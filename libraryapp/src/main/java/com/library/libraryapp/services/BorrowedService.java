@@ -7,10 +7,12 @@ import com.library.libraryapp.entities.Borrowed;
 import com.library.libraryapp.repositories.BookRepository;
 import com.library.libraryapp.repositories.BorrowedRepository;
 import com.library.libraryapp.repositories.StudentRepository;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Service
 public class BorrowedService {
     @Autowired
     private BorrowedRepository borrowedRepository;

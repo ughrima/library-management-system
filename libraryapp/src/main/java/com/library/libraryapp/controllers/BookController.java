@@ -14,7 +14,7 @@ import com.library.libraryapp.services.BookService;
 public class BookController {
     @Autowired
     private BookService bookService;
-}
+
 
 @GetMapping
 public List<Book> getAllBooks(){
@@ -41,3 +41,4 @@ public void deleteBook(@PathVariable Long id) {
     bookService.deleteBook(id);
 }
 
+}
